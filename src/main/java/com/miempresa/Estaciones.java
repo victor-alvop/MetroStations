@@ -260,6 +260,7 @@ public class Estaciones {
                     primerNodo = metroaMatriz(nodosParaMatriz, resultadoNodo.getFirst().get(i));
                     segundoNodo = metroaMatriz(nodosParaMatriz, resultadoNodo.getLast().get(j));
                     nodosFloydRuta = buscarRutaFinal(matT, primerNodo, segundoNodo, nodosParaMatriz, nodosFloydRuta);
+                    System.out.println("-------Calculando i "+i+" J: "+j);
                     if (primerapasado) {
                         primerapasado = false;
                         nodosMasCortos = cloneList(nodosFloydRuta);
